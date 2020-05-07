@@ -7,7 +7,13 @@ class Anagram
   end
   
   def match(word_list)
+    match_list = []
     
+    word_list.each do |x|
+        match_list << x  if @word.split("") == x.split("")
+    end
+    
+    return match_list
   end
     
 end
